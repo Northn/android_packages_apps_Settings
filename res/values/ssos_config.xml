@@ -24,4 +24,6 @@
     -->
     <integer name="config_fingerprintSensorLocation">0</integer>
 
+    <!-- FOD recognizing animation -->
+    <bool name="config_showFODAnimationSettings">false</bool>
 </resources>
