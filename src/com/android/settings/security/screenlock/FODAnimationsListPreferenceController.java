@@ -20,6 +20,7 @@ import android.content.Context;
 
 import androidx.preference.Preference;
 
+import com.android.internal.util.custom.FodUtils;
 import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
 
@@ -33,7 +34,10 @@ public class FODAnimationsListPreferenceController extends AbstractPreferenceCon
 
     @Override
     public boolean isAvailable() {
-        return mContext.getResources().getBoolean(R.bool.config_showFODAnimationSettings);
+    if (FodUtils.hasFodSupport(this)) {
+        return true
+    } else {
+        return false
     }
 
     @Override
