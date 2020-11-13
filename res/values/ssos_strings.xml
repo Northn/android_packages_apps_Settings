@@ -117,6 +117,7 @@
         <item quantity="other">You are now <xliff:g id="count_down_ssos">%1$d</xliff:g> steps away from meme center.</item>
     </plurals>
     <string name="emojii">😳😳😳</string>
+    <string name="easteregg_firmwareversion">ShapeShift Meme Center</string>
 
     <string name="pulse_on_new_tracks_title">Ambient music ticker</string>
     <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played. Double tap on track info to skip to next track.</string>

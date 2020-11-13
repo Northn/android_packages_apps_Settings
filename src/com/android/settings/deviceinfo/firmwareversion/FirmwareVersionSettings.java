@@ -85,10 +85,13 @@ public class FirmwareVersionSettings extends DashboardFragment implements OnPref
                 if (mToast != null) {
                     mToast.cancel();
                 }
+                PreferenceScreen screen = (PreferenceScreen) findPreference("about_key_easteregg");
+                int pos = findPreference("ssos_easteregg").getOrder();
                 mToast = Toast.makeText(getContext(),
                         getResources().getString(R.string.emojii),
                         Toast.LENGTH_SHORT);
                 mToast.show();
+                screen.onItemClick( null, null, pos, 0 ); 
             } else {
                 if (mToast != null) {
                     mToast.cancel();
